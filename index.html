@@ -430,6 +430,8 @@
   <a href="#s8"><span>08</span> 月度互動趨勢</a>
   <a href="#s9"><span>09</span> CTA 策略分析</a>
   <a href="#s10"><span>10</span> 結論與建議</a>
+  <a href="#s11"><span>11</span> IG Insights 官方數據</a>
+  <a href="#s12"><span>12</span> 受眾分析</a>
 </nav>
 
 <div class="slides-wrap">
@@ -822,7 +824,104 @@
   </div>
 
   <div class="warning-box">
-    ⚠️ <strong>數據說明：</strong>受限於帳號隱私設定，Apify 僅能抓取到 2025 年 7 月以前的 @chien_sanyo 自發 Reels（共 15 篇）。2025.08 起帳號可能已設為私人，導致後期無法抓取完整數據。建議從後台 Instagram Insights 取得完整數字做更精確分析。
+    📊 <strong>數據補充：</strong>Apify 公開數據涵蓋 2025.03–07 共 15 篇自發 Reels。官方後台 IG Insights（2026 Q1）完整互動與受眾數據已整合於第 11–12 頁，兩者合併可得最完整分析。
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     SLIDE 11 — IG Insights 官方後台數據
+══════════════════════════════════════════ -->
+<div class="slide" id="s11">
+  <div class="slide-label">官方後台數據</div>
+  <h2>IG Insights 真實互動數據</h2>
+  <p class="sub">資料期間：2026 年 1 月 25 日 — 4 月 24 日（3 個月）｜來源：Instagram 帳號中心匯出</p>
+
+  <div class="kpi-grid" style="grid-template-columns: repeat(4,1fr);">
+    <div class="kpi-card">
+      <div class="kpi-icon">🔥</div>
+      <div class="kpi-val" style="color:var(--accent1)">1,792</div>
+      <div class="kpi-label">總內容互動次數</div>
+      <div class="kpi-sub" style="color:#4caf50">+444% vs 前期</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon">🎬</div>
+      <div class="kpi-val" style="color:var(--accent2)">1,445</div>
+      <div class="kpi-label">Reels 互動次數</div>
+      <div class="kpi-sub" style="color:#4caf50">+2,910% vs 前期</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon">👥</div>
+      <div class="kpi-val" style="color:var(--accent3)">617</div>
+      <div class="kpi-label">現有粉絲數</div>
+      <div class="kpi-sub" style="color:#4caf50">+17.9%（淨增 94 人）</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon">🌐</div>
+      <div class="kpi-val" style="color:#4caf50">84.6%</div>
+      <div class="kpi-label">非粉絲互動比例</div>
+      <div class="kpi-sub">Reels 觸及大量陌生受眾</div>
+    </div>
+  </div>
+
+  <div class="chart-row cols-2" style="margin-top:20px;">
+    <div class="chart-card">
+      <h3 style="margin-bottom:8px; font-size:14px; color:#aaa;">Reels 互動細項拆解</h3>
+      <div class="chart-wrap">
+        <canvas id="chart-reel-breakdown"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h3 style="margin-bottom:8px; font-size:14px; color:#aaa;">各類內容互動對比（3 個月）</h3>
+      <div class="chart-wrap">
+        <canvas id="chart-content-compare"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 12 — 受眾分析
+══════════════════════════════════════════ -->
+<div class="slide" id="s12">
+  <div class="slide-label">受眾分析</div>
+  <h2>你的粉絲是誰？</h2>
+  <p class="sub">資料期間：2026 年 1 月 25 日 — 4 月 24 日｜來源：Instagram 帳號中心匯出</p>
+
+  <div class="chart-row cols-2">
+    <div class="chart-card">
+      <h3 style="margin-bottom:8px; font-size:14px; color:#aaa;">年齡分布</h3>
+      <div class="chart-wrap">
+        <canvas id="chart-age"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h3 style="margin-bottom:8px; font-size:14px; color:#aaa;">城市分布 Top 5</h3>
+      <div class="chart-wrap">
+        <canvas id="chart-city"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-grid" style="grid-template-columns: repeat(3,1fr); margin-top:16px;">
+    <div class="kpi-card">
+      <div class="kpi-icon">⚧</div>
+      <div class="kpi-val" style="color:var(--accent3); font-size:28px;">57.4% / 42.5%</div>
+      <div class="kpi-label">男性 / 女性比例</div>
+      <div class="kpi-sub">主要 25–44 歲，佔總粉絲 89.8%</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon">🗺️</div>
+      <div class="kpi-val" style="color:var(--accent1); font-size:28px;">86.6%</div>
+      <div class="kpi-label">台灣受眾佔比</div>
+      <div class="kpi-sub">台北 37.4%、新北 29.9% 為主力</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon">🌏</div>
+      <div class="kpi-val" style="color:var(--accent2); font-size:28px;">13.4%</div>
+      <div class="kpi-label">海外受眾佔比</div>
+      <div class="kpi-sub">中國 2.4%、美國 1.9%、港日各 1.7%</div>
+    </div>
   </div>
 </div>
 
@@ -886,7 +985,7 @@ const chartDefaults = {
 const isMobile = () => window.innerWidth <= 768;
 
 // ── SLIDE NAV ──────────────────────────────────────────
-const TOTAL = 10;
+const TOTAL = 12;
 let cur = 0;
 const slides = document.querySelectorAll('.slide');
 const dotsEl = document.getElementById('dots');
@@ -918,6 +1017,7 @@ document.addEventListener('keydown', e => {
 // ── CHART BUILD ───────────────────────────────────────
 const chartsBuilt = Array(TOTAL).fill(false);
 chartsBuilt[0] = true; // cover, no chart
+chartsBuilt[1] = true; // s2 KPI cards, no chart
 
 // On mobile: build all charts after page loads
 window.addEventListener('load', () => {
@@ -937,6 +1037,8 @@ function buildChart(idx) {
   if (idx === 6) buildCollab();
   if (idx === 7) buildTrend();
   if (idx === 8) buildCta();
+  if (idx === 10) buildInsights();
+  if (idx === 11) buildAudience();
 }
 
 function mkCtx(id) {
@@ -1222,6 +1324,100 @@ function buildCta() {
 document.addEventListener('DOMContentLoaded', () => {
   // nothing needed on load — charts are lazy
 });
+
+// ── SLIDE 11 — IG Insights 官方數據 ───────────────────
+function buildInsights() {
+  // Reels 互動細項拆解
+  new Chart(mkCtx('chart-reel-breakdown'), {
+    type: 'bar',
+    data: {
+      labels: ['按讚', '分享', '儲存', '留言'],
+      datasets: [{
+        data: [970, 185, 66, 39],
+        backgroundColor: ['#C850C0', '#4776E6', '#FFCC70', '#e05c73'],
+        borderRadius: 6
+      }]
+    },
+    options: {
+      ...BASE_OPTS,
+      plugins: { ...BASE_OPTS.plugins, legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#aaa' }, grid: { display: false } },
+        y: { ticks: { color: '#666' }, grid: { color: '#1f1f1f' } }
+      }
+    }
+  });
+
+  // 各類內容互動對比
+  new Chart(mkCtx('chart-content-compare'), {
+    type: 'bar',
+    data: {
+      labels: ['Reels', '限時動態', '貼文'],
+      datasets: [{
+        label: '互動次數',
+        data: [1445, 340, 7],
+        backgroundColor: ['#C850C0', '#4776E6', '#FFCC70'],
+        borderRadius: 6
+      }]
+    },
+    options: {
+      ...BASE_OPTS,
+      plugins: { ...BASE_OPTS.plugins, legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#aaa' }, grid: { display: false } },
+        y: { ticks: { color: '#666' }, grid: { color: '#1f1f1f' } }
+      }
+    }
+  });
+}
+
+// ── SLIDE 12 — 受眾分析 ───────────────────────────────
+function buildAudience() {
+  // 年齡分布
+  new Chart(mkCtx('chart-age'), {
+    type: 'bar',
+    data: {
+      labels: ['13-17', '18-24', '25-34', '35-44', '45-54', '55-64', '65+'],
+      datasets: [{
+        label: '佔比 %',
+        data: [0.1, 6.1, 69.8, 20, 2.7, 0.8, 0.1],
+        backgroundColor: ['#666', '#4776E6', '#C850C0', '#FFCC70', '#4caf50', '#888', '#555'],
+        borderRadius: 4
+      }]
+    },
+    options: {
+      ...BASE_OPTS,
+      plugins: { ...BASE_OPTS.plugins, legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#aaa' }, grid: { display: false } },
+        y: {
+          ticks: { color: '#666', callback: v => v + '%' },
+          grid: { color: '#1f1f1f' }
+        }
+      }
+    }
+  });
+
+  // 城市分布
+  new Chart(mkCtx('chart-city'), {
+    type: 'doughnut',
+    data: {
+      labels: ['台北', '新北', '台中', '桃園', '台南', '其他'],
+      datasets: [{
+        data: [37.4, 29.9, 6.8, 4.5, 1.9, 19.5],
+        backgroundColor: ['#C850C0', '#4776E6', '#FFCC70', '#4caf50', '#e05c73', '#444'],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      ...BASE_OPTS,
+      plugins: {
+        ...BASE_OPTS.plugins,
+        legend: { labels: { color: '#aaa', font: { size: 12 } }, position: 'right' }
+      }
+    }
+  });
+}
 </script>
 </body>
 </html>
